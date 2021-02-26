@@ -10,7 +10,14 @@
 
 <script>
 export default {
-
+  watch: {
+    // for put the meta title from vue router to the name tab and icon (if there is no icon in meta the default vue will be redering)
+    $route(to) {
+      document.title = `${to.meta.title}`;
+      const link = document.querySelector("[rel='icon']")
+      link.setAttribute('href', to.meta.icon)
+    }
+  }
 }
 </script>
 

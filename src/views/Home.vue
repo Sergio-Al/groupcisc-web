@@ -86,7 +86,7 @@
       </div>
       <carousel>
         <slide v-for="slide in 10" :key="slide">
-          <div class="carousel__item">{{ slide }}</div>
+          <div class="carousel__item">Servidores Torre Basico y Avanzado {{ slide }}</div>
         </slide>
 
         <template #addons>
