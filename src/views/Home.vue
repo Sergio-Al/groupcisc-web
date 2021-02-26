@@ -84,64 +84,26 @@
       <div class="text-center products-heading">
         <h1><strong>PRODUCTOS</strong></h1>
       </div>
-      <carousel>
-        <slide v-for="slide in 10" :key="slide">
-          <div class="carousel__item">Servidores Torre Basico y Avanzado {{ slide }}</div>
-        </slide>
-
-        <template #addons>
-          <navigation />
-          <pagination />
-        </template>
-      </carousel>
-
-
-      <!-- <div class="simple-slider">
-        <div class="swiper-container">
-          <div class="swiper-wrapper">
+      <div class="container">
+        <carousel>
+          <slide v-for="x in resources.length" :key="x">
             <div
-              class="d-flex justify-content-center align-items-center justify-content-sm-center align-items-sm-center swiper-slide"
-              style="
-                background: url('../assets/img/Products/almacenamiento.jpg')
-                  center center / cover no-repeat;
-              "
-            >
-              <div style="padding: 0px 5px">
-                <h1 class="text-center products-slide">
-                  <strong>Servidores Torre Básico</strong><br /><strong
-                    >y Avanzado</strong
-                  >
-                </h1>
-              </div>
-            </div>
-            <div
-              class="d-flex justify-content-center align-items-center swiper-slide"
-              style="
-                background: url('../assets/img/Products/infraestructura.jpg')
-                  center center / cover no-repeat;
-              "
-            >
-              <div>
-                <h1 class="products-slide">Heading</h1>
-              </div>
-            </div>
-            <div
-              class="d-flex justify-content-center align-items-center swiper-slide"
-              style="
-                background: url('../assets/img/Products/hero-section.jpg')
-                  center center / cover no-repeat;
-              "
-            >
-              <div>
-                <h1 class="products-slide">Heading</h1>
-              </div>
-            </div>
-          </div>
-          <div class="swiper-pagination"></div>
-          <div class="swiper-button-prev"></div>
-          <div class="swiper-button-next"></div>
-        </div>
-      </div> -->
+              class="carousel__item"
+              :style="{
+                background:
+                  'url(' +
+                  resources[x - 1].imageUrl +
+                  ') center / cover no-repeat',
+              }"
+            ></div>
+          </slide>
+
+          <template #addons>
+            <navigation />
+            <pagination />
+          </template>
+        </carousel>
+      </div>
     </section>
     <section id="counter" class="counting-section">
       <div class="container-fluid text-white">
@@ -261,6 +223,13 @@
 import jQuery from "jquery";
 import { Carousel, Navigation, Pagination, Slide } from "vue3-carousel";
 
+//Local Images
+// For Products Carousel
+import ProductImage1 from "../assets/img/Products/banner-cableado.png";
+import ProductImage2 from "../assets/img/Products/solucion-networking.png";
+import ProductImage3 from "../assets/img/Products/solucion-colaboracion.png";
+import ProductImage4 from "../assets/img/Products/solucion-servidores.png";
+
 export default {
   name: "Home",
   components: {
@@ -270,7 +239,26 @@ export default {
     Navigation,
   },
   data() {
-    return {};
+    return {
+      resources: [
+        {
+          id: 1,
+          imageUrl: ProductImage1,
+        },
+        {
+          id: 2,
+          imageUrl: ProductImage2,
+        },
+        {
+          id: 3,
+          imageUrl: ProductImage3,
+        },
+        {
+          id: 4,
+          imageUrl: ProductImage4,
+        },
+      ],
+    };
   },
   methods: {},
   mounted() {
@@ -375,13 +363,34 @@ export default {
 .carousel__item {
   height: 500px;
   width: 100%;
-  background: url(../assets/img/Products/almacenamiento.jpg) center center / cover no-repeat;
   color: rgb(248, 248, 248);
   font-size: 20px;
   border-radius: 8px;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+@media (max-width: 768px) {
+  .container .carousel__item {
+    height: 300px;
+    padding: 0;
+    margin: 0;
+  }
+}
+@media (max-width: 411px) {
+  .container .carousel__item {
+    height: 180px;
+    padding: 0;
+    margin: 0;
+  }
+}
+
+@media (max-width: 320px) {
+  .container .carousel__item {
+    height: 150px;
+    padding: 0;
+    margin: 0;
+  }
 }
 
 .carousel__slide {
@@ -392,10 +401,6 @@ export default {
 .carousel__next {
   box-sizing: content-box;
   border: 5px solid white;
-}
-
-.products-section {
-  padding: 0px 20px;
 }
 </style>
 

@@ -1,12 +1,13 @@
 <template>
   <nav class="navbar navbar-light navbar-expand-md navbar-style">
     <div class="container">
-      <a class="navbar-brand brand-style" href="#"
-        ><img
+      <router-link to="/">
+        <img
           class="img-fluid"
           src="../../assets/img/UI/LOGO-FINAL-GC.png"
-          style="width: 107px" /></a
-      ><button
+          style="width: 107px"
+      /></router-link>
+      <button
         data-toggle="collapse"
         class="navbar-toggler"
         data-target="#navcol-1"
@@ -28,7 +29,9 @@
               >SOLUCIONES IT</a
             >
             <div class="dropdown-menu">
-              <router-link class="dropdown-item" to="/services">Servicios</router-link>
+              <router-link class="dropdown-item" to="/services"
+                >Servicios</router-link
+              >
               <a class="dropdown-item" href="#">Seguridad de Redes</a
               ><a class="dropdown-item" href="#">Redes Inalámbricas</a
               ><a class="dropdown-item" href="#">Soluciones de Colaboración</a
