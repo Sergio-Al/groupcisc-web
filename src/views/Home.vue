@@ -85,38 +85,8 @@
         <h1><strong>PRODUCTOS</strong></h1>
       </div>
       <carousel>
-        <!-- <slide v-for="slide in 10" :key="slide">
+        <slide v-for="slide in 10" :key="slide">
           <div class="carousel__item">{{ slide }}</div>
-        </slide> -->
-        <slide>
-          <div
-            class="d-flex justify-content-center align-items-center justify-content-sm-center align-items-sm-center carousel__item"
-            style="
-                background: url('https://images.unsplash.com/photo-1506399558188-acca6f8cbf41?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=2039&q=80');
-                  center center / cover no-repeat;
-              "
-          >
-            <div style="padding: 0px 5px">
-              <h1 class="text-center products-slide">
-                <strong>Servidores Torre Básico</strong><br /><strong
-                  >y Avanzado</strong
-                >
-              </h1>
-            </div>
-          </div>
-        </slide>
-        <slide>
-          <div
-            class="d-flex justify-content-center align-items-center swiper-slide carousel__item"
-            style="
-              background: url('../assets/img/Products/infraestructura.jpg')
-                center center / cover no-repeat;
-            "
-          >
-            <div>
-              <h1 class="products-slide">Heading</h1>
-            </div>
-          </div>
         </slide>
 
         <template #addons>
@@ -124,6 +94,8 @@
           <pagination />
         </template>
       </carousel>
+
+
       <!-- <div class="simple-slider">
         <div class="swiper-container">
           <div class="swiper-wrapper">
@@ -403,8 +375,8 @@ export default {
 .carousel__item {
   height: 500px;
   width: 100%;
-  background: url(../assets/img/Products/almacenamiento.jpg);
-  color: rgb(0, 0, 0);
+  background: url(../assets/img/Products/almacenamiento.jpg) center center / cover no-repeat;
+  color: rgb(248, 248, 248);
   font-size: 20px;
   border-radius: 8px;
   display: flex;
