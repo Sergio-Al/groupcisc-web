@@ -1,0 +1,42 @@
+.brands {
+  color: #313437;
+  background-color: #fff;
+}
+
+.brands a {
+  display: block;
+  text-align: center;
+  padding: 40px 0;
+}
+
+@media (max-width:767px) {
+  .brands a {
+    padding: 30px 0;
+  }
+}
+
+.brands a img {
+  display: inline-block;
+  margin: 10px 20px;
+  vertical-align: middle;
+}
+
+.brands-section {
+  margin: 50px 0;
+}
+
+.navbar-brand.brand-style {
+  width: 100px;
+}
+
+.branding-title {
+  font-size: 32px;
+  color: #e30321;
+}
+
+@media (min-width: 768px) {
+  .branding-title {
+    font-size: 40px;
+  }
+}
+

@@ -1,0 +1,56 @@
+<template>
+  <footer class="footer-dark">
+    <div class="container text-left">
+      <div class="row">
+        <div class="col-md-3 footer-column">
+          <h3>UBICACIÓN</h3>
+          <ul>
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+            <li>Item 4</li>
+          </ul>
+        </div>
+        <div class="col-md-3 footer-column">
+          <h3>ACCESIBILIDAD</h3>
+          <ul>
+            <li><a href="#">Servicios</a></li>
+            <li><a href="#">Nosotros</a></li>
+            <li><a href="#">Productos</a></li>
+            <li><a href="#">Contacto</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3 footer-column">
+          <h3>CONTACTOS</h3>
+          <ul>
+            <li><a href="#">Servicio de Preventa</a></li>
+            <li><a href="#">Servicio de Postventa</a></li>
+            <li><a href="#">Soporte Técnico</a></li>
+            <li><a href="#">Atención al cliente</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3 footer-column">
+          <h3>CENTRO DE CAPACITACIÓN</h3>
+          <ul>
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+            <li>Item 4</li>
+          </ul>
+        </div>
+        <div class="col-md-12 item social">
+          <a href="#"><i class="icon ion-social-facebook"></i></a
+          ><a href="#"><i class="icon ion-social-linkedin"></i></a
+          ><a href="#"><i class="icon ion-social-instagram"></i></a>
+        </div>
+      </div>
+      <p class="copyright">
+        Copyrights ©️ 2021 - Groupcisc Centro Empresarial S.R.L.
+      </p>
+    </div>
+  </footer>
+</template>
+
+<style scoped>
+@import url(../../assets/css/Footer-Dark.css);
+</style>
