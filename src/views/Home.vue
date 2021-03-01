@@ -15,69 +15,51 @@
       <div class="text-center services-heading">
         <h1 class="text"><strong>SOLUCIONES IT</strong></h1>
       </div>
+      <div class="container carousel-custom">
+        <carousel items-to-show="3" wrap-around="true">
+          <slide v-for="slide in resourcesSolutions.length" :key="slide">
+            <div class="card services-card-carousel">
+              <div class="card-body">
+                <i :class="resourcesSolutions[slide - 1].icon"></i>
+                <h4 class="card-title card-title-custom">
+                  {{ resourcesSolutions[slide - 1].title }}
+                </h4>
+                <p class="card-text">
+                  <br />{{
+                    resourcesSolutions[slide - 1].description
+                  }}.<br /><br />
+                </p>
+              </div>
+            </div>
+          </slide>
+          <template #addons>
+            <navigation />
+            <pagination />
+          </template>
+        </carousel>
+      </div>
       <div class="container services-container">
-        <div class="row">
-          <div class="col-sm-12 col-md-6 col-lg-4">
-            <div class="card services-card">
+        <carousel items-to-show="1" wrap-around="true">
+          <slide v-for="slide in resourcesSolutions.length" :key="slide">
+            <div class="card services-card-carousel">
               <div class="card-body">
-                <i class="fa fa-mixcloud services-card-icon"></i>
-                <h4 class="card-title card-title-custom">COLABORACIÓN</h4>
+                <i :class="resourcesSolutions[slide - 1].icon"></i>
+                <h4 class="card-title card-title-custom">
+                  {{ resourcesSolutions[slide - 1].title }}
+                </h4>
                 <p class="card-text">
-                  <br />Solución que ofrecemos para administrar los recursos de
-                  su infraestructura TI.<br /><br />
+                  <br />{{
+                    resourcesSolutions[slide - 1].description
+                  }}.<br /><br />
                 </p>
               </div>
             </div>
-          </div>
-          <div class="col-sm-12 col-md-6 col-lg-4">
-            <div class="card services-card-exp">
-              <div class="card-body">
-                <i class="fa fa-mixcloud services-card-icon"></i>
-                <h4 class="card-title card-title-custom">NETWORKING</h4>
-                <p class="card-text">
-                  <br />Solución que ofrecemos para administrar los recursos de
-                  su infraestructura TI.<br /><br />
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-12 col-md-6 col-lg-4">
-            <div class="card services-card">
-              <div class="card-body">
-                <i class="fa fa-mixcloud services-card-icon"></i>
-                <h4 class="card-title card-title-custom">SERVIDORES</h4>
-                <p class="card-text">
-                  <br />Solución que ofrecemos para administrar los recursos de
-                  su infraestructura TI.<br /><br />
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-12 col-md-6 col-lg-4">
-            <div class="card services-card-exp">
-              <div class="card-body">
-                <i class="fa fa-mixcloud services-card-icon"></i>
-                <h4 class="card-title card-title-custom">SEGURIDAD</h4>
-                <p class="card-text">
-                  <br />Solución que ofrecemos para administrar los recursos de
-                  su infraestructura TI.<br /><br />
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-12 col-md-6 col-lg-4">
-            <div class="card services-card">
-              <div class="card-body">
-                <i class="fa fa-mixcloud services-card-icon"></i>
-                <h4 class="card-title card-title-custom">INFRAESTRUCTURA</h4>
-                <p class="card-text">
-                  <br />Solución que ofrecemos para administrar los recursos de
-                  su infraestructura TI.<br /><br />
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
+          </slide>
+          <template #addons>
+            <navigation />
+            <pagination />
+          </template>
+        </carousel>
       </div>
     </section>
     <section id="products" class="products-section">
@@ -258,7 +240,65 @@ export default {
           imageUrl: ProductImage4,
         },
       ],
+      resourcesSolutions: [
+        {
+          id: 1,
+          icon: "fa fa-usb services-card-icon",
+          title: "COLABORACIÓN",
+          description:
+            "Herramientas corporativas para que puedan colaborar entre sí, en una sola plataforma",
+        },
+        {
+          id: 2,
+          icon: "fa fa-mixcloud services-card-icon",
+          title: "NETWORKING",
+          description:
+            "Comunicación de datos e información en la red de nuestros clientes, usando las mejores prácticas del mercado otorgando diseños y soluciones.",
+        },
+        {
+          id: 3,
+          icon: "fa fa-server services-card-icon",
+          title: "SERVIDORES",
+          description:
+            "Extienda los beneficios de la tecnología del almacenamiento distribuido a mas aplicaciones y casos de uso.",
+        },
+        {
+          id: 4,
+          icon: "fa fa-lock services-card-icon",
+          title: "SEGURIDAD",
+          description:
+            "Nuestras soluciones de seguridad le brindan protección a través del uso de red extendida.",
+        },
+        {
+          id: 5,
+          icon: "fa fa-building-o services-card-icon",
+          title: "INFRAESTRUCTURA",
+          description:
+            "Las soluciones y servicios ofrecidos por la empresa permiten acelerar la innovación, reducir costes y complejidad.",
+        },
+      ],
+      // for breakpoint slides
+      settings: {
+        itemsToShow: 1,
+        snapAlign: "center",
+      },
+      breakpoints: {
+        400: {
+          itemsToShow: 2,
+        },
+        700: {
+          itemsToShow: 3.5,
+        },
+        1024: {
+          itemsToShow: 4.5,
+        },
+      },
     };
+  },
+  computed: {
+    getIcon(num) {
+      return this.resourcesSolutions[num].icon;
+    },
   },
   methods: {},
   mounted() {
@@ -335,6 +375,16 @@ export default {
   margin-bottom: 10px;
 }
 
+.services-card-carousel {
+  background: #fff6f6;
+  color: #707070;
+  border-radius: 10px;
+  border-color: red;
+  transition: 0.3s;
+  height: 100%;
+  margin: 5px 0px;
+}
+
 .services-card-exp {
   border: solid;
   background: #ffffff;
@@ -358,6 +408,23 @@ export default {
 
 .services-card:hover {
   box-shadow: 0px 2px 17px rgb(126, 125, 125);
+}
+
+@media (max-width: 768px) {
+  .carousel-custom {
+    display: none;
+  }
+}
+
+.services-container {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .services-container {
+    display: initial;
+    padding: 10px;
+  }
 }
 
 .carousel__item {
