@@ -12,7 +12,6 @@
         <div class="row text-left">
           <div class="col-sm-12 col-md-4">
             <div class="services-collapse-menu">
-              <h2>SERVICIOS</h2>
               <div>
                 <a
                   class="btn"
@@ -21,7 +20,7 @@
                   aria-controls="collapse-1"
                   href="#collapse-1"
                   role="button"
-                  >OFRECEMOS</a
+                  >SERVICIOS</a
                 >
                 <div class="collapse show" id="collapse-1">
                   <ul class="nav flex-column">

@@ -147,7 +147,7 @@
                 class="rounded-circle"
                 src="../assets/img/About/ProfileMission.jpg"
               />
-              <h2 class="card-about-title">HISTORIA</h2>
+              <h2 class="card-about-title">NOSOTROS</h2>
               <p class="text-left">
                 <br />Somos una organización dedicada a la comercialización de
                 soluciones en el campo de la Tecnología de la Información y

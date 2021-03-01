@@ -5,10 +5,10 @@
         <div class="col-md-3 footer-column">
           <h3>UBICACIÓN</h3>
           <ul>
-            <li>Item 1</li>
-            <li>Item 2</li>
-            <li>Item 3</li>
-            <li>Item 4</li>
+            <li>Dirreccion: Calle A. Ascarrunz <br/> Nro. 2506, esquina Calle Lisimaco Gutierrez Zona Sopocachi</li>
+            <li>La Paz-Bolivia</li>
+            <li>Telefono: (+591) 2410150</li>
+            <li>Whatsapp: (+591) 69927061</li>
           </ul>
         </div>
         <div class="col-md-3 footer-column">
@@ -32,10 +32,9 @@
         <div class="col-md-3 footer-column">
           <h3>CENTRO DE CAPACITACIÓN</h3>
           <ul>
-            <li>Item 1</li>
-            <li>Item 2</li>
-            <li>Item 3</li>
-            <li>Item 4</li>
+            <li><a href="#">Cursos de Capacitación</a></li>
+            <li><a href="#">Bootcamps</a></li>
+            <li><a href="#">Webinars</a></li>
           </ul>
         </div>
         <div class="col-md-12 item social">

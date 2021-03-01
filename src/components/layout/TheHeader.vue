@@ -16,7 +16,7 @@
         ><i class="fa fa-align-justify"></i>
       </button>
       <div
-        class="collapse navbar-collapse justify-content-end navbar-collapse"
+        class="collapse navbar-collapse justify-content-end navbar-collapse collapse-menu"
         id="navcol-1"
       >
         <ul class="navbar-nav">
@@ -30,17 +30,17 @@
             >
             <div class="dropdown-menu">
               <router-link class="dropdown-item" to="/services"
-                >Servicios</router-link
+                >Networking</router-link
               >
               <a class="dropdown-item" href="#">Seguridad de Redes</a
               ><a class="dropdown-item" href="#">Redes Inalámbricas</a
-              ><a class="dropdown-item" href="#">Soluciones de Colaboración</a
+              ><a class="dropdown-item" href="#">Colaboración</a
               ><a class="dropdown-item" href="#">Servidores y Almacenamiento</a
-              ><a class="dropdown-item" href="#">Integración de Soluciones</a
+              ><a class="dropdown-item" href="#">Integración</a
               ><a class="dropdown-item" href="#"
-                >Soluciones de Energía y Cableado</a
+                >Energía y Cableado</a
               ><a class="dropdown-item" href="#"
-                >Soluciones en Seguridad Electronica</a
+                >Seguridad Electronica</a
               >
             </div>
           </li>
@@ -56,3 +56,9 @@
     </div>
   </nav>
 </template>
+
+<style scoped>
+.collapse-menu{
+  z-index: 1;
+}
+</style>
