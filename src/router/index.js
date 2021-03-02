@@ -1,7 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import Home from '../views/Home.vue'
 import Services from '../views/Services/ServicesPage.vue'
-import Contact from  '../views/Contact.vue'
+import Contact from '../views/Contact.vue'
 
 const routes = [
   {
@@ -38,7 +38,14 @@ const routes = [
 
 const router = createRouter({
   history: createWebHistory(process.env.BASE_URL),
-  routes
+  routes,
+  scrollBehavior(to, from, savedPosition) {
+    if(savedPosition){
+      return savedPosition;
+    } else {
+      document.documentElement.scrollTop = 0;
+    }
+  }
 })
 
 export default router

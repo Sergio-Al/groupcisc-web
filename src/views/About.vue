@@ -31,7 +31,7 @@
           />
         </div>
       </div>
-      <div class="row about-section">
+      <div id="#mision" class="row about-section">
         <div class="col img-column">
           <img
             class="img-fluid"
@@ -62,7 +62,7 @@
             </p>
           </div>
         </div>
-        <div class="col img-column">
+        <div id="vision" class="col img-column">
           <img
             class="img-fluid"
             src="../assets/img/About/web-about-vision.png"

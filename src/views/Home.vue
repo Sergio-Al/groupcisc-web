@@ -16,7 +16,7 @@
         <h1 class="text"><strong>SOLUCIONES IT</strong></h1>
       </div>
       <div class="container carousel-custom">
-        <carousel items-to-show="3" wrap-around="true">
+        <carousel :items-to-show="3" :wrap-around="true">
           <slide v-for="slide in resourcesSolutions.length" :key="slide">
             <div class="card services-card-carousel">
               <div class="card-body">
@@ -39,7 +39,7 @@
         </carousel>
       </div>
       <div class="container services-container">
-        <carousel items-to-show="1" wrap-around="true">
+        <carousel :items-to-show="1" :wrap-around="true">
           <slide v-for="slide in resourcesSolutions.length" :key="slide">
             <div class="card services-card-carousel">
               <div class="card-body">
@@ -124,50 +124,71 @@
         </div>
         <div class="row">
           <div class="col-sm-12 col-md-6 col-lg-4 text-center about-column">
-            <div class="about-card">
-              <img
-                class="rounded-circle"
-                src="../assets/img/About/aboutUsSection.png"
-              />
-              <h2 class="card-about-title">NOSOTROS</h2>
-              <p class="text-left">
-                <br />Somos una organización dedicada a la comercialización de
-                soluciones en el campo de la Tecnología de la Información y
-                Telecomunicaciones, abarcando aspectos de diseño, instalación y
-                mantenimiento de equipos de comunicación IP, soluciones
-                integradas para transmisión de voz, datos, sistemas de
-                almacenamiento de datos, cableado estructurado y otros.<br />
-              </p>
+            <div
+              class="d-flex flex-column justify-content-between align-items-center about-card"
+            >
+              <div>
+                <img
+                  class="rounded-circle"
+                  src="../assets/img/About/aboutUsSection.png"
+                />
+                <h2 class="card-about-title">NOSOTROS</h2>
+                <p class="text-left">
+                  <br />Somos una organización dedicada a la comercialización de
+                  soluciones en el campo de la Tecnología de la Información y
+                  Telecomunicaciones, abarcando aspectos de diseño, instalación
+                  y mantenimiento de equipos de comunicación IP, soluciones
+                  integradas para transmisión de voz, datos, sistemas de
+                  almacenamiento de datos, cableado estructurado y otros.<br />
+                </p>
+              </div>
+              <button class="btn about-button" type="button">
+                <router-link to="/about">Ver Más</router-link>
+              </button>
             </div>
           </div>
           <div class="col-sm-12 col-md-6 col-lg-4 text-center about-column">
-            <div class="about-card">
-              <img
-                class="rounded-circle"
-                src="../assets/img/About/ProfileMission.jpg"
-              />
-              <h2 class="card-about-title">MISIÓN</h2>
-              <p class="text-left">
-                <br />Continuar siendo en todo momento el apoyo tecnológico
-                hacia todos nuestros clientes, ofreciendo siempre
-                responsabilidad empresarial y compromiso de calidad a cada una
-                de sus necesidades tecnológicas.<br />
-              </p>
+            <div
+              class="d-flex flex-column justify-content-between align-items-center about-card"
+            >
+              <div>
+                <img
+                  class="rounded-circle"
+                  src="../assets/img/About/ProfileMission.jpg"
+                />
+                <h2 class="card-about-title">MISIÓN</h2>
+                <p class="text-left">
+                  <br />Continuar siendo en todo momento el apoyo tecnológico
+                  hacia todos nuestros clientes, ofreciendo siempre
+                  responsabilidad empresarial y compromiso de calidad a cada una
+                  de sus necesidades tecnológicas.<br />
+                </p>
+              </div>
+              <button class="btn about-button" type="button">
+                <router-link :to="{name: 'About', hash: '#mision' }">Ver Más</router-link>
+              </button>
             </div>
           </div>
           <div class="col-sm-12 col-md-6 col-lg-4 text-center about-column">
-            <div class="about-card">
-              <img
-                class="rounded-circle"
-                src="../assets/img/About/ProfileVision.jpg"
-              />
-              <h2 class="card-about-title">VISIÓN</h2>
-              <p class="text-left">
-                <br />Profesionales comprometidos y dedicados a proveer
-                soluciones e innovación tecnológica hacia nuestros clientes
-                logrando tecnologizar y satisfacer sus necesidades en las
-                tecnologías de información.<br />
-              </p>
+            <div
+              class="d-flex flex-column justify-content-between align-items-center about-card"
+            >
+              <div>
+                <img
+                  class="rounded-circle"
+                  src="../assets/img/About/ProfileVision.jpg"
+                />
+                <h2 class="card-about-title">VISIÓN</h2>
+                <p class="text-left">
+                  <br />Profesionales comprometidos y dedicados a proveer
+                  soluciones e innovación tecnológica hacia nuestros clientes
+                  logrando tecnologizar y satisfacer sus necesidades en las
+                  tecnologías de información.<br />
+                </p>
+              </div>
+              <button class="btn about-button" type="button">
+                <router-link :to="{name: 'About', hash: '#vision' }">Ver Más</router-link>
+              </button>
             </div>
           </div>
         </div>
@@ -406,7 +427,11 @@ export default {
   box-shadow: 0px 2px 17px rgb(126, 125, 125);
 }
 
-.services-card:hover {
+.services-card.services:hover {
+  box-shadow: 0px 2px 17px rgb(126, 125, 125);
+}
+
+.services-card-carousel:hover {
   box-shadow: 0px 2px 17px rgb(126, 125, 125);
 }
 
@@ -468,6 +493,34 @@ export default {
 .carousel__next {
   box-sizing: content-box;
   border: 5px solid white;
+}
+
+.btn.about-button:hover {
+  width: auto;
+  border: none;
+  background-color: #004097;
+  border-radius: 20px;
+  color: white;
+}
+
+.btn.about-button {
+  width: auto;
+  text-decoration: none;
+  color: #004097;
+  border-color: #004097;
+  border-radius: 20px;
+  transition: 0.3s ease-in;
+}
+
+a {
+  text-decoration: none;
+  color: #004097;
+  transition: 0.1s ease-in-out;
+}
+
+a:hover {
+  text-decoration: none;
+  color: white;
 }
 </style>
 
