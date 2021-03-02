@@ -127,7 +127,7 @@
             <div class="about-card">
               <img
                 class="rounded-circle"
-                src="../assets/img/About/ProfileMission.jpg"
+                src="../assets/img/About/aboutUsSection.png"
               />
               <h2 class="card-about-title">NOSOTROS</h2>
               <p class="text-left">
@@ -159,7 +159,7 @@
             <div class="about-card">
               <img
                 class="rounded-circle"
-                src="../assets/img/About/ProfileMission.jpg"
+                src="../assets/img/About/ProfileVision.jpg"
               />
               <h2 class="card-about-title">VISIÓN</h2>
               <p class="text-left">

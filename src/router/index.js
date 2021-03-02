@@ -1,6 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import Home from '../views/Home.vue'
 import Services from '../views/Services/ServicesPage.vue'
+import Contact from  '../views/Contact.vue'
 
 const routes = [
   {
@@ -26,6 +27,12 @@ const routes = [
     name: 'Servicios',
     component: Services,
     meta: { title: "GroupCisc - Servicios", }
+  },
+  {
+    path: '/contact',
+    name: 'Contacto',
+    component: Contact,
+    meta: { title: "GroupCisc - Contacto", }
   }
 ]
 

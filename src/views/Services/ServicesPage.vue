@@ -1,9 +1,11 @@
 <template>
   <div>
-    <div class="general-title-bg">
-      <div class="general-title-setup">
-        <div class="container">
-          <h1 class="page-title">SOLUCIONES IT</h1>
+    <div class="title-section">
+      <div class="container d-flex align-items-center">
+        <div class="row">
+          <div class="col">
+            <h1>CONTACTO</h1>
+          </div>
         </div>
       </div>
     </div>
@@ -235,4 +237,15 @@ export default {
 
 <style scoped>
 @import url(../../assets/css/services.css);
+
+h1 {
+  font-weight: bold;
+}
+
+div.title-section {
+  background-color: #004097;
+  color: #fff;
+  height: 120px;
+  display: flex;
+}
 </style>

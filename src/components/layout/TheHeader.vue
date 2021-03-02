@@ -37,20 +37,17 @@
               ><a class="dropdown-item" href="#">Colaboración</a
               ><a class="dropdown-item" href="#">Servidores y Almacenamiento</a
               ><a class="dropdown-item" href="#">Integración</a
-              ><a class="dropdown-item" href="#"
-                >Energía y Cableado</a
-              ><a class="dropdown-item" href="#"
-                >Seguridad Electronica</a
-              >
+              ><a class="dropdown-item" href="#">Energía y Cableado</a
+              ><a class="dropdown-item" href="#">Seguridad Electronica</a>
             </div>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#about">NOSOTROS</a>
+            <router-link class="nav-link" to="/about">NOSOTROS</router-link>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#products">PRODUCTOS</a>
           </li>
-          <li class="nav-item"><a class="nav-link" href="#">CONTACTO</a></li>
+          <li class="nav-item"><router-link class="nav-link" to="/contact">CONTACTO</router-link></li>
         </ul>
       </div>
     </div>
@@ -58,7 +55,7 @@
 </template>
 
 <style scoped>
-.collapse-menu{
+.collapse-menu {
   z-index: 1;
 }
 </style>
