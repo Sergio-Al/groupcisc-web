@@ -23,9 +23,10 @@ const routes = [
     meta: { title: "GroupCisc - Acerca de" }
   },
   {
-    path: '/services',
+    path: '/services/:name',
     name: 'Servicios',
     component: Services,
+    props: true,
     meta: { title: "GroupCisc - Servicios", }
   },
   {

@@ -29,11 +29,13 @@
               >SOLUCIONES IT</a
             >
             <div class="dropdown-menu">
-              <router-link class="dropdown-item" to="/services"
+              <router-link class="dropdown-item" to="/services/networking"
                 >Networking</router-link
               >
-              <a class="dropdown-item" href="#">Seguridad de Redes</a
-              ><a class="dropdown-item" href="#">Redes Inalámbricas</a
+              <router-link class="dropdown-item" to="/services/seguridad_de_redes"
+                >Seguridad de Redes</router-link
+              >
+              <a class="dropdown-item" href="#">Redes Inalámbricas</a
               ><a class="dropdown-item" href="#">Colaboración</a
               ><a class="dropdown-item" href="#">Servidores y Almacenamiento</a
               ><a class="dropdown-item" href="#">Integración</a
