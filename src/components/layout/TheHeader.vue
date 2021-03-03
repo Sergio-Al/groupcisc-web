@@ -35,12 +35,27 @@
               <router-link class="dropdown-item" to="/services/seguridad_de_redes"
                 >Seguridad de Redes</router-link
               >
-              <a class="dropdown-item" href="#">Redes Inalámbricas</a
-              ><a class="dropdown-item" href="#">Colaboración</a
-              ><a class="dropdown-item" href="#">Servidores y Almacenamiento</a
-              ><a class="dropdown-item" href="#">Integración</a
-              ><a class="dropdown-item" href="#">Energía y Cableado</a
-              ><a class="dropdown-item" href="#">Seguridad Electronica</a>
+              <router-link class="dropdown-item" to="/services/redes_inalambricas"
+                >Redes Inalámbricas</router-link
+              >
+              <router-link class="dropdown-item" to="/services/colaboracion"
+                >Colaboración</router-link
+              >
+              <router-link class="dropdown-item" to="/services/soluciones_de_servidores_cisco"
+                >Servidores y Almacenamiento</router-link
+              >
+              <router-link class="dropdown-item" to="/services/integracion_de_soluciones"
+                >Integración</router-link
+              >
+              <router-link class="dropdown-item" to="/services/soluciones_de_infraestructura"
+                >Infraestructura</router-link
+              >
+              <router-link class="dropdown-item" to="/services/soluciones_en_seguridad_electronica"
+                >Seguridad Electrónica</router-link
+              >
+              <router-link class="dropdown-item" to="/services/soporte_tecnico"
+                >Soporte técnico</router-link
+              >
             </div>
           </li>
           <li class="nav-item">

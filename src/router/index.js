@@ -44,6 +44,10 @@ const router = createRouter({
     if(savedPosition){
       return savedPosition;
     } else {
+      if(to.name === 'Servicios'){
+        document.documentElement.scrollTop = 100;
+        return;
+      }
       document.documentElement.scrollTop = 0;
     }
   }
