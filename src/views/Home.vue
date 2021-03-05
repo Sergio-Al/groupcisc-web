@@ -47,17 +47,22 @@
         <carousel :items-to-show="1" :wrap-around="true">
           <slide v-for="slide in resourcesSolutions.length" :key="slide">
             <div class="card services-card-carousel">
-              <div class="card-body">
-                <i :class="resourcesSolutions[slide - 1].icon"></i>
-                <h4 class="card-title card-title-custom">
-                  {{ resourcesSolutions[slide - 1].title }}
-                </h4>
-                <p class="card-text">
-                  <br />{{
-                    resourcesSolutions[slide - 1].description
-                  }}.<br /><br />
-                </p>
-              </div>
+              <router-link
+                :to="'/services/' + resourcesSolutions[slide - 1].name"
+              >
+                <div class="card-body">
+                  <!-- <i :class="resourcesSolutions[slide - 1].icon"></i> -->
+                  <img :src="resourcesSolutions[slide - 1].image" alt="" />
+                  <h4 class="card-title card-title-custom">
+                    {{ resourcesSolutions[slide - 1].title }}
+                  </h4>
+                  <p class="card-text">
+                    <br />{{
+                      resourcesSolutions[slide - 1].description
+                    }}.<br /><br />
+                  </p>
+                </div>
+              </router-link>
             </div>
           </slide>
           <template #addons>
@@ -68,9 +73,11 @@
       </div>
     </section>
     <section id="products" class="products-section">
-      <div class="text-center products-heading">
-        <h1><strong>PRODUCTOS</strong></h1>
-      </div>
+      <router-link to="/services/networking">
+        <div class="text-center products-heading">
+          <h1><strong>PRODUCTOS</strong></h1>
+        </div>
+      </router-link>
       <div class="container">
         <carousel>
           <slide v-for="x in resources.length" :key="x">
@@ -320,6 +327,7 @@ export default {
           id: 5,
           icon: "fa fa-building-o services-card-icon",
           image: InfraestructuraImage,
+          name: "soluciones_de_infraestructura",
           title: "INFRAESTRUCTURA",
           description:
             "Las soluciones y servicios ofrecidos por la empresa permiten acelerar la innovación, reducir costes y complejidad.",
@@ -541,12 +549,11 @@ export default {
 
 a:hover {
   text-decoration: none;
-} 
+}
 
 .card-body {
   color: #707070;
 }
-
 
 .card-body img {
   width: 30%;

@@ -53,7 +53,7 @@
               <router-link
                 class="dropdown-item"
                 to="/services/integracion_de_soluciones"
-                >Integración</router-link
+                >Integración de Soluciones</router-link
               >
               <router-link
                 class="dropdown-item"

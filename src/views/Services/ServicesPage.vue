@@ -71,6 +71,17 @@
 </template>
 
 <script>
+// For Services-Solutions images in the future we will try to move to vuex
+import NetworkingImage from "../../assets/img/Solutions/networking-services.jpg";
+import SeguridadRedesImage from "../../assets/img/Solutions/seguridad-de-redes-services.jpg";
+import RedesInalambricasImage from "../../assets/img/Solutions/redes-inalambricas-services.jpg";
+import ColaboracionImage from "../../assets/img/Solutions/colaboracion-services.jpg";
+import ServidoresImage from "../../assets/img/Solutions/servidores-services.jpg";
+import IntegracionSolucionesImage from "../../assets/img/Solutions/integracion-de-soluciones-services.jpg";
+import InfraestructuraImage from "../../assets/img/Solutions/infraestructura-services.jpg";
+import SeguridadElectronicaImage from "../../assets/img/Solutions/seguridad-electronica-services.jpg";
+import SoporteTecnicoImage from "../../assets/img/Solutions/soporte-tecnico-services.jpg";
+
 export default {
   props: ["name"],
   watch: {
@@ -88,7 +99,7 @@ export default {
           name: "networking",
           title: "Networking",
           image:
-            "https://www.lehman.edu/academics/continuing-education/images/cisco.jpg",
+            NetworkingImage,
           titleDescription: "Arquitectura de Routing & Switching",
           description:
             " Garantizamos la comunicación de datos e información en la red de nuestros clientes, usando las mejores prácticas del mercado otorgando diseños y soluciones caracterizadas por alta disponibilidad y escalabilidad.",
@@ -116,7 +127,7 @@ export default {
           name: "seguridad_de_redes",
           title: "Seguridad de Redes",
           image:
-            "https://www.sccenlared.es/wp-content/uploads/2019/07/cisco-umbrella-1-1100x640.jpg",
+            SeguridadRedesImage,
           titleDescription: "Arquitectura de Seguridad",
           description:
             "Proteger la información de nuestros clientes, con servicios de seguridad de borde, inspección de paquetes, filtrado de contenido, control de usuarios y accesos, IDS, IPS.",
@@ -146,7 +157,7 @@ export default {
           name: "redes_inalambricas",
           title: "Redes Inalámbricas",
           image:
-            "https://1.bp.blogspot.com/-wMDalJE6W-Y/WkLjqYb8N6I/AAAAAAAAGnk/aYfff0k_GkUWFTjDE6Tcbtfhn7VxRqwtACLcBGAs/s1600/MESH.jpg",
+            RedesInalambricasImage,
           titleDescription: "Arquitectura de Conectividad Inalámbrica",
           description:
             "Brindando conectividad a usuarios móviles, importantes para el negocio de nuestros clientes, optimizando sus operaciones, dando acceso a su información y sobre los servicios que ofrece.",
@@ -176,7 +187,7 @@ export default {
           name: "colaboracion",
           title: "Colaboración",
           image:
-            "https://www.amsgroupe.com/wp-content/uploads/2020/12/Cisco-Telepresence-1110x550.jpg",
+            ColaboracionImage,
           titleDescription: "Arquitectura de Colaboración",
           description:
             "Herramientas corporativas para que puedan colaborar entre sí, usando telefonía IP, mensajería instantánea, conferencias de audio y video, salas de video, tablets o la combinación de las anteriores en una sola plataforma.",
@@ -204,9 +215,9 @@ export default {
         {
           id: 5,
           name: "soluciones_de_servidores",
-          title: "Servidores y Almacenamiento Cisco",
+          title: "Servidores y Almacenamiento",
           image:
-            "https://www.muycanal.com/wp-content/uploads/2020/04/Ca%C3%ADda-servidores-IONOS.jpg",
+            ServidoresImage,
           titleDescription: "Arquitectura de Servidores y Almacenamiento",
           description:
             "Extienda los beneficios de la tecnología del almacenamiento distribuido a mas aplicaciones y casos de uso contando con la siguiente tecnología:",
@@ -283,57 +294,12 @@ export default {
             },
           ],
         },
-        // {
-        //   id: 6,
-        //   name: "soluciones_de_servidores_dell_emc",
-        //   title: "Servidores y Almacenamiento DELL EMC",
-        //   image:
-        //     "https://images.unsplash.com/photo-1584169417032-d34e8d805e8b?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1170&q=80",
-        //   titleDescription: "Arquitectura de Servidores y Almacenamiento",
-        //   description:
-        //     "Como base de una solución de TI adaptable y completa, los servidores brindan agilidad y confiabilidad superior, eficiencia operativa excepcional y rendimiento superior en cualquier escala. contando con la siguiente tecnología:",
-        //   products: [
-        //     {
-        //       id: "p1",
-        //       descProduct: "Servidores Torre Básico y Avanzado.",
-        //     },
-        //     {
-        //       id: "p2",
-        //       descProduct: "Servidores para rack de 1 – 2 y 4 Sockets.",
-        //     },
-        //     {
-        //       id: "p3",
-        //       descProduct: "Servidores PowerEdge Serie FX. ",
-        //     },
-        //     {
-        //       id: "p4",
-        //       descProduct: "Servidores PowerEdge Serie M. ",
-        //     },
-        //     {
-        //       id: "p5",
-        //       descProduct: "Servidores PowerEdge Serie C. ",
-        //     },
-        //   ],
-        //   advantages: [
-        //     {
-        //       id: "adv1",
-        //       icon: "fa fa-info-circle",
-        //       descAdvantages: "Informatica de alto rendimiento.",
-        //     },
-        //     {
-        //       id: "adv1",
-        //       icon: "fa fa-angle-double-right",
-        //       descAdvantages:
-        //         "Procesamiento empresarial y soporte para toma de decisiones.",
-        //     },
-        //   ],
-        // },
         {
           id: 7,
           name: "integracion_de_soluciones",
           title: "Integración de Soluciones",
           image:
-            "https://marketingblanco.com/imagenes/beneficios-del-desarrollo-de-un-software-a-medida-para-tu-empresa.jpg",
+            IntegracionSolucionesImage,
           titleDescription: "",
           description:
             "Desde pocas máquinas virtuales que se ejecutan en computadoras físicas únicas hasta centros de servidores completos a través de servidores de raíz múltiple, la virtualización optimiza las inversiones y la estructura de red mediante la reducción del exceso de servidores subutilizados. La virtualización le ayuda a obtener beneficios a gran escala como utilización mejorada, recursos de soporte optimizados, espacio y costos reducidos, junto con una infraestructura sólida que puede brindar mayor disponibilidad y resistencia.",
@@ -372,7 +338,7 @@ export default {
           name: "soluciones_de_infraestructura",
           title: "Infraestructura",
           image:
-            "https://images.unsplash.com/photo-1431540015161-0bf868a2d407?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80",
+            InfraestructuraImage,
           titleDescription: "",
           description:
             "Con nuestros Servicios de Cableado podrá obtener la integración de los diferentes servicios de los que disponga, como pueden ser telefonía, voz, datos, video, seguridad, etc. Es decir, todo lo referente al cableado estructurado, a los sistemas de cableado estructurado (SCE), al cableado red y cableado Voz y Datos. Lo cual le asegurará una mejor comunicación dentro y fuera de su empresa.",
@@ -433,7 +399,7 @@ export default {
           name: "soluciones_en_seguridad_electronica",
           title: "Seguridad Electrónica",
           image:
-            "https://www.blindabeep.com/wp-content/uploads/2017/07/shutterstock_507670291.jpg",
+            SeguridadElectronicaImage,
           titleDescription: "",
           description: "",
           products: [],
@@ -481,7 +447,7 @@ export default {
           name: "soporte_tecnico",
           title: "Soporte técnico 24x7",
           image:
-            "https://images.unsplash.com/photo-1520881363902-a0ff4e722963?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1050&q=80",
+            SoporteTecnicoImage,
           titleDescription: "Mantenimiento preventivo y correctivo",
           description:
             "Una parte importante del ciclo comercial, es el seguimiento y acompañamiento a las soluciones instaladas posteriores a su implementación. Por lo general, todos los productos y soluciones cuentan con respaldo de garantía y soporte, el cual viene incluido en la solucion ofertada.",

@@ -12,12 +12,12 @@
           </ul>
         </div>
         <div class="col-md-3 footer-column">
-          <h3>SOLUCIONES IT</h3>
+          <h3>ACCESIBILIDAD</h3>
           <ul>
-            <li><a href="#">Servicios</a></li>
-            <li><a href="#">Nosotros</a></li>
-            <li><a href="#">Productos</a></li>
-            <li><a href="#">Contacto</a></li>
+            <li><router-link to="/services/networking">Soluciones IT</router-link></li>
+            <li><router-link to="/about">Nosotros</router-link></li>
+            <li><router-link to="/services/networking">Productos</router-link></li>
+            <li><router-link to="/contact">Contacto</router-link></li>
           </ul>
         </div>
         <div class="col-md-3 footer-column">
