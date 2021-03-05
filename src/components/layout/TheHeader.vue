@@ -32,25 +32,37 @@
               <router-link class="dropdown-item" to="/services/networking"
                 >Networking</router-link
               >
-              <router-link class="dropdown-item" to="/services/seguridad_de_redes"
+              <router-link
+                class="dropdown-item"
+                to="/services/seguridad_de_redes"
                 >Seguridad de Redes</router-link
               >
-              <router-link class="dropdown-item" to="/services/redes_inalambricas"
+              <router-link
+                class="dropdown-item"
+                to="/services/redes_inalambricas"
                 >Redes Inalámbricas</router-link
               >
               <router-link class="dropdown-item" to="/services/colaboracion"
                 >Colaboración</router-link
               >
-              <router-link class="dropdown-item" to="/services/soluciones_de_servidores_cisco"
+              <router-link
+                class="dropdown-item"
+                to="/services/soluciones_de_servidores_cisco"
                 >Servidores y Almacenamiento</router-link
               >
-              <router-link class="dropdown-item" to="/services/integracion_de_soluciones"
+              <router-link
+                class="dropdown-item"
+                to="/services/integracion_de_soluciones"
                 >Integración</router-link
               >
-              <router-link class="dropdown-item" to="/services/soluciones_de_infraestructura"
+              <router-link
+                class="dropdown-item"
+                to="/services/soluciones_de_infraestructura"
                 >Infraestructura</router-link
               >
-              <router-link class="dropdown-item" to="/services/soluciones_en_seguridad_electronica"
+              <router-link
+                class="dropdown-item"
+                to="/services/soluciones_en_seguridad_electronica"
                 >Seguridad Electrónica</router-link
               >
               <router-link class="dropdown-item" to="/services/soporte_tecnico"
@@ -62,9 +74,8 @@
             <router-link class="nav-link" to="/about">NOSOTROS</router-link>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#products">PRODUCTOS</a>
+            <router-link class="nav-link" to="/contact">CONTACTO</router-link>
           </li>
-          <li class="nav-item"><router-link class="nav-link" to="/contact">CONTACTO</router-link></li>
         </ul>
       </div>
     </div>

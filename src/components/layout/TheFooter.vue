@@ -12,7 +12,7 @@
           </ul>
         </div>
         <div class="col-md-3 footer-column">
-          <h3>ACCESIBILIDAD</h3>
+          <h3>SOLUCIONES IT</h3>
           <ul>
             <li><a href="#">Servicios</a></li>
             <li><a href="#">Nosotros</a></li>
@@ -23,10 +23,10 @@
         <div class="col-md-3 footer-column">
           <h3>CONTACTOS</h3>
           <ul>
-            <li><a href="#">Servicio de Preventa</a></li>
-            <li><a href="#">Servicio de Postventa</a></li>
-            <li><a href="#">Soporte Técnico</a></li>
-            <li><a href="#">Atención al cliente</a></li>
+            <li><a href="mailTo.servicios@groupcisc.com">Servicio de Preventa</a></li>
+            <li><a href="mailTo.servicios@groupcisc.com">Servicio de Postventa</a></li>
+            <li><router-link to="/services/soporte_tecnico">Soporte Técnico</router-link></li>
+            <li><a href="mailTo:atencion.cliente@groupcisc.com">Atención al cliente</a></li>
           </ul>
         </div>
         <div class="col-md-3 footer-column">

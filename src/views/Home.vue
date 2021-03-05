@@ -4,12 +4,12 @@
       class="d-flex justify-content-center align-items-center main-section"
       id="hero"
     >
-      <div class="jumbotron">
+      <!-- <div class="jumbotron">
         <h1 class="d-inline-block main-jumbotron-heading">
           <strong>SOLUCIONES CORPORATIVAS</strong>
         </h1>
         <p>Centro Empresarial S.R.L.<br /></p>
-      </div>
+      </div> -->
     </section>
     <section id="services" class="services-section">
       <div class="text-center services-heading">
@@ -19,17 +19,22 @@
         <carousel :items-to-show="3" :wrap-around="true">
           <slide v-for="slide in resourcesSolutions.length" :key="slide">
             <div class="card services-card-carousel">
-              <div class="card-body">
-                <i :class="resourcesSolutions[slide - 1].icon"></i>
-                <h4 class="card-title card-title-custom">
-                  {{ resourcesSolutions[slide - 1].title }}
-                </h4>
-                <p class="card-text">
-                  <br />{{
-                    resourcesSolutions[slide - 1].description
-                  }}.<br /><br />
-                </p>
-              </div>
+              <router-link
+                :to="'/services/' + resourcesSolutions[slide - 1].name"
+              >
+                <div class="card-body">
+                  <!-- <i :class="resourcesSolutions[slide - 1].icon"></i> -->
+                  <img :src="resourcesSolutions[slide - 1].image" alt="" />
+                  <h4 class="card-title card-title-custom">
+                    {{ resourcesSolutions[slide - 1].title }}
+                  </h4>
+                  <p class="card-text">
+                    <br />{{
+                      resourcesSolutions[slide - 1].description
+                    }}.<br /><br />
+                  </p>
+                </div>
+              </router-link>
             </div>
           </slide>
           <template #addons>
@@ -110,7 +115,7 @@
             <h1 class="love_count" style="font-size: 70px">
               <strong>300</strong>
             </h1>
-            <h4 style="color: #ffffff; margin-top: -6px">Profesionales</h4>
+            <h4 style="color: #ffffff; margin-top: -6px">Casos de Éxito</h4>
           </div>
         </div>
       </div>
@@ -142,9 +147,11 @@
                   almacenamiento de datos, cableado estructurado y otros.<br />
                 </p>
               </div>
-              <button class="btn about-button" type="button">
-                <router-link to="/about">Ver Más</router-link>
-              </button>
+              <router-link to="/about">
+                <button class="btn about-button" type="button">
+                  Ver Más
+                </button></router-link
+              >
             </div>
           </div>
           <div class="col-sm-12 col-md-6 col-lg-4 text-center about-column">
@@ -164,9 +171,11 @@
                   de sus necesidades tecnológicas.<br />
                 </p>
               </div>
-              <button class="btn about-button" type="button">
-                <router-link :to="{name: 'About', hash: '#mision' }">Ver Más</router-link>
-              </button>
+              <router-link to="/about">
+                <button class="btn about-button" type="button">
+                  Ver Más
+                </button></router-link
+              >
             </div>
           </div>
           <div class="col-sm-12 col-md-6 col-lg-4 text-center about-column">
@@ -186,9 +195,11 @@
                   tecnologías de información.<br />
                 </p>
               </div>
-              <button class="btn about-button" type="button">
-                <router-link :to="{name: 'About', hash: '#vision' }">Ver Más</router-link>
-              </button>
+              <router-link to="/about">
+                <button class="btn about-button" type="button">
+                  Ver Más
+                </button></router-link
+              >
             </div>
           </div>
         </div>
@@ -227,6 +238,13 @@ import jQuery from "jquery";
 import { Carousel, Navigation, Pagination, Slide } from "vue3-carousel";
 
 //Local Images
+// For Solutions Carousel
+import ColaboracionImage from "../assets/img/Solutions/colaboracion-icon.png";
+import InfraestructuraImage from "../assets/img/Solutions/infraestructura-icon.png";
+import NetworkingImage from "../assets/img/Solutions/networking-icon.png";
+import SeguridadImage from "../assets/img/Solutions/seguridad-icon.png";
+import ServidoresImage from "../assets/img/Solutions/servidores-icon.png";
+
 // For Products Carousel
 import ProductImage1 from "../assets/img/Products/banner-cableado.png";
 import ProductImage2 from "../assets/img/Products/solucion-networking.png";
@@ -265,6 +283,8 @@ export default {
         {
           id: 1,
           icon: "fa fa-usb services-card-icon",
+          image: ColaboracionImage,
+          name: "colaboracion",
           title: "COLABORACIÓN",
           description:
             "Herramientas corporativas para que puedan colaborar entre sí, en una sola plataforma",
@@ -272,6 +292,8 @@ export default {
         {
           id: 2,
           icon: "fa fa-mixcloud services-card-icon",
+          image: NetworkingImage,
+          name: "networking",
           title: "NETWORKING",
           description:
             "Comunicación de datos e información en la red de nuestros clientes, usando las mejores prácticas del mercado otorgando diseños y soluciones.",
@@ -279,6 +301,8 @@ export default {
         {
           id: 3,
           icon: "fa fa-server services-card-icon",
+          image: ServidoresImage,
+          name: "soluciones_de_servidores",
           title: "SERVIDORES",
           description:
             "Extienda los beneficios de la tecnología del almacenamiento distribuido a mas aplicaciones y casos de uso.",
@@ -286,6 +310,8 @@ export default {
         {
           id: 4,
           icon: "fa fa-lock services-card-icon",
+          image: SeguridadImage,
+          name: "soluciones_en_seguridad_electronica",
           title: "SEGURIDAD",
           description:
             "Nuestras soluciones de seguridad le brindan protección a través del uso de red extendida.",
@@ -293,6 +319,7 @@ export default {
         {
           id: 5,
           icon: "fa fa-building-o services-card-icon",
+          image: InfraestructuraImage,
           title: "INFRAESTRUCTURA",
           description:
             "Las soluciones y servicios ofrecidos por la empresa permiten acelerar la innovación, reducir costes y complejidad.",
@@ -324,33 +351,33 @@ export default {
   methods: {},
   mounted() {
     // for the Hero Title
-    const text = document.querySelector(".main-jumbotron-heading");
-    console.log(text.textContent);
-    const content = text.textContent;
-    const arraySplitted = content.split("");
-    text.textContent = "";
+    // const text = document.querySelector(".main-jumbotron-heading");
+    // console.log(text.textContent);
+    // const content = text.textContent;
+    // const arraySplitted = content.split("");
+    // text.textContent = "";
 
-    for (let i = 0; i < arraySplitted.length; i++) {
-      text.innerHTML += "<span>" + arraySplitted[i] + "</span>";
-    }
+    // for (let i = 0; i < arraySplitted.length; i++) {
+    //   text.innerHTML += "<span>" + arraySplitted[i] + "</span>";
+    // }
 
-    let char = 0;
-    let timer = setInterval(onTick, 50);
+    // let char = 0;
+    // let timer = setInterval(onTick, 50);
 
-    function onTick() {
-      const span = text.querySelectorAll("span")[char];
-      span.classList.add("fading");
-      char++;
-      if (char === content.length) {
-        complete();
-        return;
-      }
-    }
+    // function onTick() {
+    //   const span = text.querySelectorAll("span")[char];
+    //   span.classList.add("fading");
+    //   char++;
+    //   if (char === content.length) {
+    //     complete();
+    //     return;
+    //   }
+    // }
 
-    function complete() {
-      clearInterval(timer);
-      timer = null;
-    }
+    // function complete() {
+    //   clearInterval(timer);
+    //   timer = null;
+    // }
 
     // for the counter
     jQuery(window).scroll(startCounter);
@@ -512,15 +539,19 @@ export default {
   transition: 0.3s ease-in;
 }
 
-a {
-  text-decoration: none;
-  color: #004097;
-  transition: 0.1s ease-in-out;
-}
-
 a:hover {
   text-decoration: none;
-  color: white;
+} 
+
+.card-body {
+  color: #707070;
+}
+
+
+.card-body img {
+  width: 30%;
+  align-content: center;
+  margin-bottom: 10px;
 }
 </style>
 

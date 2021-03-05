@@ -26,7 +26,7 @@
       </div>
       <div class="row contact-section">
         <div class="col">
-          <h2>Manda tu mensaje</h2>
+          <h2>Contactate con Nosotros</h2>
           <form>
             <div class="form-group">
               <div>

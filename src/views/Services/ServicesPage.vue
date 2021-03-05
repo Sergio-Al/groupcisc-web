@@ -88,7 +88,7 @@ export default {
           name: "networking",
           title: "Networking",
           image:
-            "https://images.freeimages.com/images/large-previews/c5a/chenbro-rackmount-19-inch-1512529.jpg",
+            "https://www.lehman.edu/academics/continuing-education/images/cisco.jpg",
           titleDescription: "Arquitectura de Routing & Switching",
           description:
             " Garantizamos la comunicación de datos e información en la red de nuestros clientes, usando las mejores prácticas del mercado otorgando diseños y soluciones caracterizadas por alta disponibilidad y escalabilidad.",
@@ -116,7 +116,7 @@ export default {
           name: "seguridad_de_redes",
           title: "Seguridad de Redes",
           image:
-            "https://images.unsplash.com/photo-1611095971113-9f7542655338?ixid=MXwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1051&q=80",
+            "https://www.sccenlared.es/wp-content/uploads/2019/07/cisco-umbrella-1-1100x640.jpg",
           titleDescription: "Arquitectura de Seguridad",
           description:
             "Proteger la información de nuestros clientes, con servicios de seguridad de borde, inspección de paquetes, filtrado de contenido, control de usuarios y accesos, IDS, IPS.",
@@ -146,7 +146,7 @@ export default {
           name: "redes_inalambricas",
           title: "Redes Inalámbricas",
           image:
-            "https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80",
+            "https://1.bp.blogspot.com/-wMDalJE6W-Y/WkLjqYb8N6I/AAAAAAAAGnk/aYfff0k_GkUWFTjDE6Tcbtfhn7VxRqwtACLcBGAs/s1600/MESH.jpg",
           titleDescription: "Arquitectura de Conectividad Inalámbrica",
           description:
             "Brindando conectividad a usuarios móviles, importantes para el negocio de nuestros clientes, optimizando sus operaciones, dando acceso a su información y sobre los servicios que ofrece.",
@@ -176,7 +176,7 @@ export default {
           name: "colaboracion",
           title: "Colaboración",
           image:
-            "https://images.unsplash.com/photo-1585974738771-84483dd9f89f?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=966&q=80",
+            "https://www.amsgroupe.com/wp-content/uploads/2020/12/Cisco-Telepresence-1110x550.jpg",
           titleDescription: "Arquitectura de Colaboración",
           description:
             "Herramientas corporativas para que puedan colaborar entre sí, usando telefonía IP, mensajería instantánea, conferencias de audio y video, salas de video, tablets o la combinación de las anteriores en una sola plataforma.",
@@ -203,10 +203,10 @@ export default {
         },
         {
           id: 5,
-          name: "soluciones_de_servidores_cisco",
+          name: "soluciones_de_servidores",
           title: "Servidores y Almacenamiento Cisco",
           image:
-            "https://images.unsplash.com/photo-1584278050763-2fbf1864e4c9?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80",
+            "https://www.muycanal.com/wp-content/uploads/2020/04/Ca%C3%ADda-servidores-IONOS.jpg",
           titleDescription: "Arquitectura de Servidores y Almacenamiento",
           description:
             "Extienda los beneficios de la tecnología del almacenamiento distribuido a mas aplicaciones y casos de uso contando con la siguiente tecnología:",
@@ -236,6 +236,26 @@ export default {
               descProduct:
                 "Nodo Cisco HyperFlex HX240c M4 con servidores Blade Cisco UCS B200",
             },
+            {
+              id: "p7",
+              descProduct: "Servidores Torre Básico y Avanzado.",
+            },
+            {
+              id: "p8",
+              descProduct: "Servidores para rack de 1 – 2 y 4 Sockets.",
+            },
+            {
+              id: "p9",
+              descProduct: "Servidores PowerEdge Serie FX. ",
+            },
+            {
+              id: "p10",
+              descProduct: "Servidores PowerEdge Serie M. ",
+            },
+            {
+              id: "p11",
+              descProduct: "Servidores PowerEdge Serie C. ",
+            },
           ],
           advantages: [
             {
@@ -245,64 +265,75 @@ export default {
                 "Alta Capacidad para cargas de trabajo a máxima capacidad de almacenamiento.",
             },
             {
-              id: "adv1",
+              id: "adv2",
               icon: "fa fa-angle-double-right",
               descAdvantages:
                 "Ampliar el cómputo y el almacenamiento de manera independiente.",
             },
-          ],
-        },
-        {
-          id: 6,
-          name: "soluciones_de_servidores_dell_emc",
-          title: "Servidores y Almacenamiento DELL EMC",
-          image:
-            "https://images.unsplash.com/photo-1584169417032-d34e8d805e8b?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1170&q=80",
-          titleDescription: "Arquitectura de Servidores y Almacenamiento",
-          description:
-            "Como base de una solución de TI adaptable y completa, los servidores brindan agilidad y confiabilidad superior, eficiencia operativa excepcional y rendimiento superior en cualquier escala. contando con la siguiente tecnología:",
-          products: [
             {
-              id: "p1",
-              descProduct: "Servidores Torre Básico y Avanzado.",
-            },
-            {
-              id: "p2",
-              descProduct: "Servidores para rack de 1 – 2 y 4 Sockets.",
-            },
-            {
-              id: "p3",
-              descProduct: "Servidores PowerEdge Serie FX. ",
-            },
-            {
-              id: "p4",
-              descProduct: "Servidores PowerEdge Serie M. ",
-            },
-            {
-              id: "p5",
-              descProduct: "Servidores PowerEdge Serie C. ",
-            },
-          ],
-          advantages: [
-            {
-              id: "adv1",
+              id: "adv3",
               icon: "fa fa-info-circle",
               descAdvantages: "Informatica de alto rendimiento.",
             },
             {
-              id: "adv1",
+              id: "adv4",
               icon: "fa fa-angle-double-right",
               descAdvantages:
                 "Procesamiento empresarial y soporte para toma de decisiones.",
             },
           ],
         },
+        // {
+        //   id: 6,
+        //   name: "soluciones_de_servidores_dell_emc",
+        //   title: "Servidores y Almacenamiento DELL EMC",
+        //   image:
+        //     "https://images.unsplash.com/photo-1584169417032-d34e8d805e8b?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1170&q=80",
+        //   titleDescription: "Arquitectura de Servidores y Almacenamiento",
+        //   description:
+        //     "Como base de una solución de TI adaptable y completa, los servidores brindan agilidad y confiabilidad superior, eficiencia operativa excepcional y rendimiento superior en cualquier escala. contando con la siguiente tecnología:",
+        //   products: [
+        //     {
+        //       id: "p1",
+        //       descProduct: "Servidores Torre Básico y Avanzado.",
+        //     },
+        //     {
+        //       id: "p2",
+        //       descProduct: "Servidores para rack de 1 – 2 y 4 Sockets.",
+        //     },
+        //     {
+        //       id: "p3",
+        //       descProduct: "Servidores PowerEdge Serie FX. ",
+        //     },
+        //     {
+        //       id: "p4",
+        //       descProduct: "Servidores PowerEdge Serie M. ",
+        //     },
+        //     {
+        //       id: "p5",
+        //       descProduct: "Servidores PowerEdge Serie C. ",
+        //     },
+        //   ],
+        //   advantages: [
+        //     {
+        //       id: "adv1",
+        //       icon: "fa fa-info-circle",
+        //       descAdvantages: "Informatica de alto rendimiento.",
+        //     },
+        //     {
+        //       id: "adv1",
+        //       icon: "fa fa-angle-double-right",
+        //       descAdvantages:
+        //         "Procesamiento empresarial y soporte para toma de decisiones.",
+        //     },
+        //   ],
+        // },
         {
           id: 7,
           name: "integracion_de_soluciones",
-          title: "Integración",
+          title: "Integración de Soluciones",
           image:
-            "https://images.unsplash.com/photo-1574790398664-0cb03682ed1c?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1051&q=80",
+            "https://marketingblanco.com/imagenes/beneficios-del-desarrollo-de-un-software-a-medida-para-tu-empresa.jpg",
           titleDescription: "",
           description:
             "Desde pocas máquinas virtuales que se ejecutan en computadoras físicas únicas hasta centros de servidores completos a través de servidores de raíz múltiple, la virtualización optimiza las inversiones y la estructura de red mediante la reducción del exceso de servidores subutilizados. La virtualización le ayuda a obtener beneficios a gran escala como utilización mejorada, recursos de soporte optimizados, espacio y costos reducidos, junto con una infraestructura sólida que puede brindar mayor disponibilidad y resistencia.",
@@ -402,7 +433,7 @@ export default {
           name: "soluciones_en_seguridad_electronica",
           title: "Seguridad Electrónica",
           image:
-            "https://images.unsplash.com/photo-1515432085503-cabf2fbcd690?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+            "https://www.blindabeep.com/wp-content/uploads/2017/07/shutterstock_507670291.jpg",
           titleDescription: "",
           description: "",
           products: [],
