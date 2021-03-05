@@ -25,6 +25,7 @@ export default {
                     description:
                         " Garantizamos la comunicación de datos e información en la red de nuestros clientes, usando las mejores prácticas del mercado otorgando diseños y soluciones caracterizadas por alta disponibilidad y escalabilidad.",
                     products: [],
+                    advantagesTitle: "Beneficios",
                     advantages: [
                         {
                             id: "adv1",
@@ -53,6 +54,7 @@ export default {
                     description:
                         "Proteger la información de nuestros clientes, con servicios de seguridad de borde, inspección de paquetes, filtrado de contenido, control de usuarios y accesos, IDS, IPS.",
                     products: [],
+                    advantagesTitle: "Beneficios",
                     advantages: [
                         {
                             id: "adv1",
@@ -83,6 +85,7 @@ export default {
                     description:
                         "Brindando conectividad a usuarios móviles, importantes para el negocio de nuestros clientes, optimizando sus operaciones, dando acceso a su información y sobre los servicios que ofrece.",
                     products: [],
+                    advantagesTitle: "Beneficios",
                     advantages: [
                         {
                             id: "adv1",
@@ -113,6 +116,7 @@ export default {
                     description:
                         "Herramientas corporativas para que puedan colaborar entre sí, usando telefonía IP, mensajería instantánea, conferencias de audio y video, salas de video, tablets o la combinación de las anteriores en una sola plataforma.",
                     products: [],
+                    advantagesTitle: "Beneficios",
                     advantages: [
                         {
                             id: "adv1",
@@ -189,6 +193,7 @@ export default {
                             descProduct: "Servidores PowerEdge Serie C. ",
                         },
                     ],
+                    advantagesTitle: "Beneficios",
                     advantages: [
                         {
                             id: "adv1",
@@ -225,6 +230,7 @@ export default {
                     description:
                         "Desde pocas máquinas virtuales que se ejecutan en computadoras físicas únicas hasta centros de servidores completos a través de servidores de raíz múltiple, la virtualización optimiza las inversiones y la estructura de red mediante la reducción del exceso de servidores subutilizados. La virtualización le ayuda a obtener beneficios a gran escala como utilización mejorada, recursos de soporte optimizados, espacio y costos reducidos, junto con una infraestructura sólida que puede brindar mayor disponibilidad y resistencia.",
                     products: [],
+                    advantagesTitle: "Beneficios",
                     advantages: [
                         {
                             id: "adv1",
@@ -264,6 +270,7 @@ export default {
                     description:
                         "Con nuestros Servicios de Cableado podrá obtener la integración de los diferentes servicios de los que disponga, como pueden ser telefonía, voz, datos, video, seguridad, etc. Es decir, todo lo referente al cableado estructurado, a los sistemas de cableado estructurado (SCE), al cableado red y cableado Voz y Datos. Lo cual le asegurará una mejor comunicación dentro y fuera de su empresa.",
                     products: [],
+                    advantagesTitle: "Beneficios",
                     advantages: [
                         {
                             id: "adv1",
@@ -324,6 +331,7 @@ export default {
                     titleDescription: "",
                     description: "",
                     products: [],
+                    advantagesTitle: "Beneficios",
                     advantages: [
                         {
                             id: "adv1",
@@ -373,6 +381,7 @@ export default {
                     description:
                         "Una parte importante del ciclo comercial, es el seguimiento y acompañamiento a las soluciones instaladas posteriores a su implementación. Por lo general, todos los productos y soluciones cuentan con respaldo de garantía y soporte, el cual viene incluido en la solucion ofertada.",
                     products: [],
+                    advantagesTitle: "Beneficios",
                     advantages: [
                         {
                             id: "adv1",
@@ -399,6 +408,41 @@ export default {
                         },
                     ],
                 },
+                {
+                    id: 11,
+                    name: "contactos_comerciales",
+                    title: "Contactos Comerciales",
+                    image: "",
+                    titleDescription: "Contactos Pre - Post Venta",
+                    description:
+                        "",
+                    products: [{
+                        id: "p1",
+                        descProduct: "Servicio Preventa (+591)2410150 - Int: 1020     Email: servicios@groupcisc.com",
+                    },
+                    {
+                        id: "p2",
+                        descProduct: "Servicio Postventa (+591)2410150 - Int: 1020     Email: servicios@groupcisc.com",
+                    },
+                    ],
+                    advantagesTitle: "Contactos Atencion al Cliente",
+                    advantages: [
+                        {
+                            id: "adv2",
+                            icon: "fa fa-info-circle",
+                            descAdvantages:
+                                "Atencion al Cliente (+591)2410150 - Int: 1030     Email: atencion.cliente@groupcisc.com",
+                        },
+                        {
+                            id: "adv3",
+                            icon: "fa fa-info-circle",
+                            descAdvantages:
+                                "Soporte Técnico (+591)2410150 - Int: 1030     Email: atencion.cliente@groupcisc.com",
+                        },
+
+                    ],
+                },
+
             ]
         }
 
@@ -407,11 +451,11 @@ export default {
     },
     actions: {
     },
-    getters:{
-        services(state){
+    getters: {
+        services(state) {
             return state.services;
         },
-        hasServices(state){
+        hasServices(state) {
             return state.services && state.services.length > 0;
         }
     }

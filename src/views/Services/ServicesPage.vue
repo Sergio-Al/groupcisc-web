@@ -34,6 +34,7 @@
                         {{ sol.title }}
                       </router-link>
                     </li>
+                    <li></li>
                   </ul>
                 </div>
               </div>
@@ -55,7 +56,7 @@
                 </li>
               </ul>
               <h4 class="heading-font heading-four-settings services-paragraph">
-                Beneficios
+                {{ getTitleAdvantages }}
               </h4>
               <ul>
                 <li v-for="a in getAdvantages" :key="a.id">
@@ -104,6 +105,9 @@ export default {
     },
     getProducts() {
       return this.solutions.products;
+    },
+    getTitleAdvantages() {
+      return this.solutions.advantagesTitle;
     },
     getAdvantages() {
       return this.solutions.advantages;

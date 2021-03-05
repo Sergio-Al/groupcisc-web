@@ -26,23 +26,8 @@
       </div>
       <div class="row contact-section">
         <div class="col">
-          <h2>Contactate con Nosotros</h2>
-          <form>
-            <div class="form-group">
-              <div>
-                <label>Nombre</label><input class="form-control" type="text" />
-              </div>
-              <div>
-                <label>E-Mail</label><input class="form-control" type="text" />
-              </div>
-              <div>
-                <label>Mensaje</label><textarea class="form-control"></textarea>
-              </div>
-            </div>
-            <button class="btn btn-primary" type="button">
-              Enviar Mensaje
-            </button>
-          </form>
+          
+          
         </div>
         <div class="col">
           <div>

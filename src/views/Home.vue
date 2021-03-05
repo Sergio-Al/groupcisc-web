@@ -224,13 +224,13 @@
         <div class="row">
           <div class="col">
             <div class="brands">
-              <a href="#">
-                <img src="../assets/img/UI/instacart.png" /><img
-                  src="../assets/img/UI/kickstarter.png" /><img
-                  src="../assets/img/UI/lyft.png" /><img
-                  src="../assets/img/UI/shopify.png" /><img
-                  src="../assets/img/UI/pinterest.png" /><img
-                  src="../assets/img/UI/twitter.png"
+              <a  href="#">
+                <img class="logos" src="../assets/img/UI/cisco-logo.png" /><img
+                  class="logos" src="../assets/img/UI/dell-logo.png" /><img
+                  class="logos" src="../assets/img/UI/fortinet-logo.png" /><img
+                 class="logos"  src="../assets/img/UI/sophos-logo.png" /><img
+                  class="logos" src="../assets/img/UI/veeam-propartner-logo.png" /><img
+                  class="logos" src="../assets/img/UI/vmware-logo.png"
               /></a>
             </div>
           </div>
@@ -253,7 +253,7 @@ import SeguridadImage from "../assets/img/Solutions/seguridad-icon.png";
 import ServidoresImage from "../assets/img/Solutions/servidores-icon.png";
 
 // For Products Carousel
-import ProductImage1 from "../assets/img/Products/banner-cableado.png";
+import ProductImage1 from "../assets/img/Products/banner-cableado.jpeg";
 import ProductImage2 from "../assets/img/Products/solucion-networking.png";
 import ProductImage3 from "../assets/img/Products/solucion-colaboracion.png";
 import ProductImage4 from "../assets/img/Products/solucion-servidores.png";
@@ -560,5 +560,16 @@ a:hover {
   align-content: center;
   margin-bottom: 10px;
 }
+
+.logos{
+  width: 10%;
+}
+
+@media (max-width: 1000px) {
+  .logos{
+    width: 30%;
+  }
+}
+
 </style>
 
