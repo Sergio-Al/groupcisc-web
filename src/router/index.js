@@ -41,10 +41,10 @@ const router = createRouter({
   history: createWebHistory(process.env.BASE_URL),
   routes,
   scrollBehavior(to, from, savedPosition) {
-    if(savedPosition){
+    if (savedPosition) {
       return savedPosition;
     } else {
-      if(to.name === 'Servicios'){
+      if (to.name === 'Servicios') {
         document.documentElement.scrollTop = 100;
         return;
       }

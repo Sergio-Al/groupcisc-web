@@ -217,7 +217,7 @@
         <div class="row">
           <div class="col">
             <h1 class="text-center branding-title">
-              <strong>NUESTROS COLABORADORES</strong>
+              <strong>NUESTROS PARTNERS</strong>
             </h1>
           </div>
         </div>

@@ -418,11 +418,7 @@ export default {
                         "",
                     products: [{
                         id: "p1",
-                        descProduct: "Servicio Preventa (+591)2410150 - Int: 1020     Email: servicios@groupcisc.com",
-                    },
-                    {
-                        id: "p2",
-                        descProduct: "Servicio Postventa (+591)2410150 - Int: 1020     Email: servicios@groupcisc.com",
+                        descProduct: "Servicio Preventa - Postventa (+591)2410150 - Int: 1020     Email: servicios@groupcisc.com",
                     },
                     ],
                     advantagesTitle: "Contactos Atencion al Cliente",
@@ -431,13 +427,13 @@ export default {
                             id: "adv2",
                             icon: "fa fa-info-circle",
                             descAdvantages:
-                                "Atencion al Cliente (+591)2410150 - Int: 1030     Email: atencion.cliente@groupcisc.com",
+                                "Atencion al Cliente (+591)2410150 - Int: 1011     Email: atencion.cliente@groupcisc.com",
                         },
                         {
                             id: "adv3",
                             icon: "fa fa-info-circle",
                             descAdvantages:
-                                "Soporte Técnico (+591)2410150 - Int: 1030     Email: atencion.cliente@groupcisc.com",
+                                "Soporte Técnico (+591)2410150 - Int: 1030     Email: soporte.tecnico@groupcisc.com",
                         },
 
                     ],

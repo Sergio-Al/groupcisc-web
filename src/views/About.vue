@@ -69,6 +69,28 @@
           />
         </div>
       </div>
+      <div id="#mision" class="row about-section">
+        <div class="col img-column">
+          <img
+            class="img-fluid"
+            src="../assets/img/About/web-about-principles-values.png"
+          />
+        </div>
+        <div class="col d-flex align-items-center">
+          <div>
+            <h2>NUESTROS PRINCIPIOS Y VALORES</h2>
+          <ul>
+            <li>Responsabilidad</li>
+            <li>Eficiencia</li>
+            <li>Eficacia</li>
+            <li>Ética</li>
+            <li>Responsabilidad Social</li>
+            <li>Responsabilidad Empresarial</li>
+            <li>Compromiso de Calidad</li>
+          </ul>
+          </div>
+        </div>
+      </div>
     </div>
   </main>
 </template>

@@ -24,21 +24,23 @@
           </section>
         </div>
       </div>
-      <div class="row contact-section">
+      <div class="row row-cols-1 row-cols-lg-2 contact-section">
         <div class="col">
-          
-          
+          <h4>Envíanos tu Mensaje</h4>
+          <a class="d-flex justify-content-center" href="https://wa.me/message/3ZAB4W3XMR5RP1" target="_blank">
+            <img id="contact-logo" src="../assets/img/UI/groupcisc-contact.png" class="img-fluid" alt="">
+          </a>
         </div>
         <div class="col">
           <div>
-            <h3>DIRECCIÓN</h3>
+            <h5>DIRECCIÓN</h5>
             <p>
               Calle A. Ascarrunz Nro 2506, esquina Calle Lisimaco Gutierrez Zona
               Sopocachi<br />La Paz -Bolivia
             </p>
-            <h3>TELÉFONOS</h3>
+            <h5>TELÉFONOS</h5>
             <p>TELF.: (591) 2410150<br />CEL.: (591) 69927061</p>
-            <h3>HORARIOS DE ATENCIÓN</h3>
+            <h5>HORARIOS DE ATENCIÓN</h5>
             <p>
               MAÑANA: 08:00 A.M. - 12:30 P.M.<br />TARDE: 14:30 P.M. - 18:30
               P.M.
@@ -68,6 +70,14 @@ h1 {
 
 .row.contact-section {
   margin: 10px 0px;
+}
+
+#contact-logo{
+  transition: 0.1s ease-in;
+}
+
+#contact-logo:hover {
+  box-shadow: 3px 3px 17px 2px rgba(37,38,38,0.2);
 }
 </style>
 

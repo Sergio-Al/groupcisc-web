@@ -23,7 +23,7 @@
         <div class="col-md-3 footer-column">
           <h3>CONTACTOS</h3>
           <ul>
-            <li><router-link to="/servicios/contactos_comerciales">Servicio de Preventa</router-link></li>
+            <li><router-link to="/services/contactos_comerciales">Servicio de Preventa</router-link></li>
             <li><router-link to="/services/contactos_comerciales">Servicio de Postventa</router-link></li>
             <li><router-link to="/services/soporte_tecnico">Soporte Técnico</router-link></li>
             <li><router-link to="/services/contactos_comerciales">Atención al cliente</router-link></li>
@@ -32,9 +32,9 @@
         <div class="col-md-3 footer-column">
           <h3>CENTRO DE CAPACITACIÓN</h3>
           <ul>
-            <li><a href="#">Cursos de Capacitación</a></li>
-            <li><a href="#">Bootcamps</a></li>
-            <li><a href="#">Webinars</a></li>
+            <li><a href="https://www.facebook.com/certifiednet">Cursos de Capacitación</a></li>
+            <li><a href="https://www.facebook.com/certifiednet">Bootcamps</a></li>
+            <li><a href="https://www.facebook.com/certifiednet">Webinars</a></li>
           </ul>
         </div>
         <div class="col-md-12 item social">
