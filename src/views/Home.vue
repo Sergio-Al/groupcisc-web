@@ -4,12 +4,6 @@
       class="d-flex justify-content-center align-items-center main-section"
       id="hero"
     >
-      <!-- <div class="jumbotron">
-        <h1 class="d-inline-block main-jumbotron-heading">
-          <strong>SOLUCIONES CORPORATIVAS</strong>
-        </h1>
-        <p>Centro Empresarial S.R.L.<br /></p>
-      </div> -->
     </section>
     <section id="services" class="services-section">
       <div class="text-center services-heading">
@@ -23,7 +17,6 @@
                 :to="'/services/' + resourcesSolutions[slide - 1].name"
               >
                 <div class="card-body">
-                  <!-- <i :class="resourcesSolutions[slide - 1].icon"></i> -->
                   <img :src="resourcesSolutions[slide - 1].image" alt="" />
                   <h4 class="card-title card-title-custom">
                     {{ resourcesSolutions[slide - 1].title }}
@@ -51,7 +44,6 @@
                 :to="'/services/' + resourcesSolutions[slide - 1].name"
               >
                 <div class="card-body">
-                  <!-- <i :class="resourcesSolutions[slide - 1].icon"></i> -->
                   <img :src="resourcesSolutions[slide - 1].image" alt="" />
                   <h4 class="card-title card-title-custom">
                     {{ resourcesSolutions[slide - 1].title }}
@@ -223,14 +215,26 @@
         </div>
         <div class="row">
           <div class="col">
-            <div class="brands">
-              <a  href="#">
-                <img class="logos" src="../assets/img/UI/cisco-logo.png" /><img
-                  class="logos" src="../assets/img/UI/dell-logo.png" /><img
-                  class="logos" src="../assets/img/UI/fortinet-logo.png" /><img
-                 class="logos"  src="../assets/img/UI/sophos-logo.png" /><img
-                  class="logos" src="../assets/img/UI/veeam-propartner-logo.png" /><img
-                  class="logos" src="../assets/img/UI/vmware-logo.png"
+            <div class="text-center brands">
+              <a href="https://www.cisco.com/" target="_blank">
+                <img class="img-fluid logos" src="../assets/img/UI/cisco-logo.png" />
+              </a>
+              <a href='http://www1.la.dell.com/content/default.aspx?c=bo&l=es&s=&s=gen&~ck=cr' target="_blank" 
+                ><img class="img-fluid logos" src="../assets/img/UI/dell-logo.png"
+              /></a>
+              <a href="https://www.fortinet.com/" target="_blank"
+                ><img class="img-fluid logos" src="../assets/img/UI/fortinet-logo.png" />
+              </a>
+              <a href="https://www.sophos.com/en-us.aspx" target="_blank">
+                <img class="img-fluid logos" src="../assets/img/UI/sophos-logo.png" />
+              </a>
+
+              <a href="https://www.veeam.com/" target="_blank"
+                ><img class="img-fluid logos" src="../assets/img/UI/veeam-logo.png"
+              /></a>
+
+              <a href="https://www.vmware.com/" target="_blank">
+                <img class="img-fluid logos" src="../assets/img/UI/vmware-logo.png"
               /></a>
             </div>
           </div>
@@ -358,35 +362,6 @@ export default {
   },
   methods: {},
   mounted() {
-    // for the Hero Title
-    // const text = document.querySelector(".main-jumbotron-heading");
-    // console.log(text.textContent);
-    // const content = text.textContent;
-    // const arraySplitted = content.split("");
-    // text.textContent = "";
-
-    // for (let i = 0; i < arraySplitted.length; i++) {
-    //   text.innerHTML += "<span>" + arraySplitted[i] + "</span>";
-    // }
-
-    // let char = 0;
-    // let timer = setInterval(onTick, 50);
-
-    // function onTick() {
-    //   const span = text.querySelectorAll("span")[char];
-    //   span.classList.add("fading");
-    //   char++;
-    //   if (char === content.length) {
-    //     complete();
-    //     return;
-    //   }
-    // }
-
-    // function complete() {
-    //   clearInterval(timer);
-    //   timer = null;
-    // }
-
     // for the counter
     jQuery(window).scroll(startCounter);
     function startCounter() {
@@ -561,15 +536,20 @@ a:hover {
   margin-bottom: 10px;
 }
 
-.logos{
+.brands a {
+  display: inline;
+}
+
+.brands a img{
   width: 10%;
 }
 
-@media (max-width: 1000px) {
-  .logos{
-    width: 30%;
-  }
+@media (max-width: 768px) {
+  .brands a img{
+  width: 30%;
 }
+}
+
 
 </style>
 
