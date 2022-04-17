@@ -1,9 +1,6 @@
 <template>
   <main>
-    <section
-      class="d-flex justify-content-center align-items-center main-section"
-      id="hero"
-    >
+    <section class="d-flex justify-content-center align-items-center main-section" id="hero">
     </section>
     <section id="services" class="services-section">
       <div class="text-center services-heading">
@@ -13,9 +10,7 @@
         <carousel :items-to-show="3" :wrap-around="true">
           <slide v-for="slide in resourcesSolutions.length" :key="slide">
             <div class="card services-card-carousel">
-              <router-link
-                :to="'/services/' + resourcesSolutions[slide - 1].name"
-              >
+              <router-link :to="'/services/' + resourcesSolutions[slide - 1].name">
                 <div class="card-body">
                   <img :src="resourcesSolutions[slide - 1].image" alt="" />
                   <h4 class="card-title card-title-custom">
@@ -40,9 +35,7 @@
         <carousel :items-to-show="1" :wrap-around="true">
           <slide v-for="slide in resourcesSolutions.length" :key="slide">
             <div class="card services-card-carousel">
-              <router-link
-                :to="'/services/' + resourcesSolutions[slide - 1].name"
-              >
+              <router-link :to="'/services/' + resourcesSolutions[slide - 1].name">
                 <div class="card-body">
                   <img :src="resourcesSolutions[slide - 1].image" alt="" />
                   <h4 class="card-title card-title-custom">
@@ -73,15 +66,12 @@
       <div class="container">
         <carousel>
           <slide v-for="x in resources.length" :key="x">
-            <div
-              class="carousel__item"
-              :style="{
-                background:
-                  'url(' +
-                  resources[x - 1].imageUrl +
-                  ') center / cover no-repeat',
-              }"
-            ></div>
+            <div class="carousel__item" :style="{
+              background:
+                'url(' +
+                resources[x - 1].imageUrl +
+                ') center / cover no-repeat',
+            }"></div>
           </slide>
 
           <template #addons>
@@ -94,16 +84,14 @@
     <section id="counter" class="counting-section">
       <div class="container-fluid text-white">
         <div class="row stadistic-row">
-          <div
-            class="col-md-6 col-lg-4 text-center pb-5 pt-5 number-item love_counter"
-          >
-            <h1 class="love_count" style="font-size: 70px">
+          <div class="col-md-6 col-lg-4 text-center pb-5 pt-5 number-item love_counter">
+            <h1 id="clients" class="love_count" style="font-size: 70px">
               <strong>3000</strong>
             </h1>
             <h4 style="color: #ffffff; margin-top: -6px">Clientes</h4>
           </div>
           <div class="col-md-6 col-lg-4 text-center pb-5 pt-5 love_counter">
-            <h1 class="love_count" style="font-size: 70px">
+            <h1 id="experience" class="love_count" style="font-size: 70px">
               <strong>8</strong>
             </h1>
             <h4 style="color: #ffffff; margin-top: -6px">
@@ -111,7 +99,7 @@
             </h4>
           </div>
           <div class="col-lg-4 text-center pb-5 pt-5 love_counter">
-            <h1 class="love_count" style="font-size: 70px">
+            <h1 id="cases" class="love_count" style="font-size: 70px">
               <strong>300</strong>
             </h1>
             <h4 style="color: #ffffff; margin-top: -6px">Casos de Éxito</h4>
@@ -128,14 +116,9 @@
         </div>
         <div class="row">
           <div class="col-sm-12 col-md-6 col-lg-4 text-center about-column">
-            <div
-              class="d-flex flex-column justify-content-between align-items-center about-card"
-            >
+            <div class="d-flex flex-column justify-content-between align-items-center about-card">
               <div>
-                <img
-                  class="rounded-circle"
-                  src="../assets/img/About/aboutUsSection.png"
-                />
+                <img class="rounded-circle" src="../assets/img/About/aboutUsSection.png" />
                 <h2 class="card-about-title">NOSOTROS</h2>
                 <p class="text-left">
                   <br />Somos una organización dedicada a la comercialización de
@@ -149,19 +132,14 @@
               <router-link to="/about">
                 <button class="btn about-button" type="button">
                   Ver Más
-                </button></router-link
-              >
+                </button>
+              </router-link>
             </div>
           </div>
           <div class="col-sm-12 col-md-6 col-lg-4 text-center about-column">
-            <div
-              class="d-flex flex-column justify-content-between align-items-center about-card"
-            >
+            <div class="d-flex flex-column justify-content-between align-items-center about-card">
               <div>
-                <img
-                  class="rounded-circle"
-                  src="../assets/img/About/ProfileMission.jpg"
-                />
+                <img class="rounded-circle" src="../assets/img/About/ProfileMission.jpg" />
                 <h2 class="card-about-title">MISIÓN</h2>
                 <p class="text-left">
                   <br />Continuar siendo en todo momento el apoyo tecnológico
@@ -173,19 +151,14 @@
               <router-link to="/about">
                 <button class="btn about-button" type="button">
                   Ver Más
-                </button></router-link
-              >
+                </button>
+              </router-link>
             </div>
           </div>
           <div class="col-sm-12 col-md-6 col-lg-4 text-center about-column">
-            <div
-              class="d-flex flex-column justify-content-between align-items-center about-card"
-            >
+            <div class="d-flex flex-column justify-content-between align-items-center about-card">
               <div>
-                <img
-                  class="rounded-circle"
-                  src="../assets/img/About/ProfileVision.jpg"
-                />
+                <img class="rounded-circle" src="../assets/img/About/ProfileVision.jpg" />
                 <h2 class="card-about-title">VISIÓN</h2>
                 <p class="text-left">
                   <br />Profesionales comprometidos y dedicados a proveer
@@ -197,8 +170,8 @@
               <router-link to="/about">
                 <button class="btn about-button" type="button">
                   Ver Más
-                </button></router-link
-              >
+                </button>
+              </router-link>
             </div>
           </div>
         </div>
@@ -219,23 +192,20 @@
               <a href="https://www.cisco.com/" target="_blank">
                 <img class="img-fluid logos" src="../assets/img/UI/cisco-logo.png" />
               </a>
-              <a href='http://www1.la.dell.com/content/default.aspx?c=bo&l=es&s=&s=gen&~ck=cr' target="_blank" 
-                ><img class="img-fluid logos" src="../assets/img/UI/dell-logo.png"
-              /></a>
-              <a href="https://www.fortinet.com/" target="_blank"
-                ><img class="img-fluid logos" src="../assets/img/UI/fortinet-logo.png" />
+              <a href='http://www1.la.dell.com/content/default.aspx?c=bo&l=es&s=&s=gen&~ck=cr' target="_blank"><img
+                  class="img-fluid logos" src="../assets/img/UI/dell-logo.png" /></a>
+              <a href="https://www.fortinet.com/" target="_blank"><img class="img-fluid logos"
+                  src="../assets/img/UI/fortinet-logo.png" />
               </a>
               <a href="https://www.sophos.com/en-us.aspx" target="_blank">
                 <img class="img-fluid logos" src="../assets/img/UI/sophos-logo.png" />
               </a>
 
-              <a href="https://www.veeam.com/" target="_blank"
-                ><img class="img-fluid logos" src="../assets/img/UI/veeam-logo.png"
-              /></a>
+              <a href="https://www.veeam.com/" target="_blank"><img class="img-fluid logos"
+                  src="../assets/img/UI/veeam-logo.png" /></a>
 
               <a href="https://www.vmware.com/" target="_blank">
-                <img class="img-fluid logos" src="../assets/img/UI/vmware-logo.png"
-              /></a>
+                <img class="img-fluid logos" src="../assets/img/UI/vmware-logo.png" /></a>
             </div>
           </div>
         </div>
@@ -368,7 +338,7 @@ export default {
       var hT = jQuery(".love_counter").offset().top,
         hH = jQuery(".love_counter").outerHeight(),
         wH = jQuery(window).height();
-      if (jQuery(window).scrollTop() > hT + hH - wH) {
+      if (jQuery(window).scrollTop() > parseInt(hT) + parseInt(hH) - parseInt(wH)) {
         jQuery(window).off("scroll", startCounter);
         jQuery(".love_count").each(function () {
           var $this = jQuery(this);
@@ -378,7 +348,7 @@ export default {
               duration: 2000,
               easing: "swing",
               step: function () {
-                $this.text(Math.ceil(this.Counter) + "+");
+                $this.text(Math.ceil(parseInt(this.Counter) + 1) + "+");
               },
             }
           );
@@ -386,6 +356,9 @@ export default {
       }
     }
   },
+  beforeUnmount() {
+    jQuery(window).scroll("destroy");
+  }
 };
 </script>
 
@@ -472,6 +445,7 @@ export default {
   justify-content: center;
   align-items: center;
 }
+
 @media (max-width: 768px) {
   .container .carousel__item {
     height: 300px;
@@ -479,6 +453,7 @@ export default {
     margin: 0;
   }
 }
+
 @media (max-width: 411px) {
   .container .carousel__item {
     height: 180px;
@@ -540,16 +515,14 @@ a:hover {
   display: inline;
 }
 
-.brands a img{
+.brands a img {
   width: 10%;
 }
 
 @media (max-width: 768px) {
-  .brands a img{
-  width: 30%;
+  .brands a img {
+    width: 30%;
+  }
 }
-}
-
-
 </style>
 
