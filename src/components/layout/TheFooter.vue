@@ -16,6 +16,11 @@
             <li class="font-weight-bold"><strong>Oficinas Ciudad de Santa Cruz</strong></li>
             <li>-</li>
             <li>Zona Norte Km 8 1/2, Av. Internacional Condominio la Fontana Riviera 2 Calle 7 Nro. 702</li>
+            <hr />
+            <li class="font-weight-bold"><strong>Oficinas Ciudad de Cochabamba</strong></li>
+            <li>-</li>
+            <li>Calle Juan Cristomo Carrillo #980 entre La Paz y Ramon Rivero</li>
+            <li>Telefono: (+591) 70595329</li>
           </ul>
         </div>
         <div class="col-md-3 footer-column">
